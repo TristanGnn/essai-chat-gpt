@@ -1,0 +1,14 @@
+// scripts.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Sélection du formulaire
+    const form = document.querySelector('form');
+
+    // Écoute de l'événement de soumission du formulaire
+    form.addEventListener('submit', function(event) {
+        // Empêche l'envoi du formulaire par défaut
+        event.preventDefault();
+
+        // Affiche une alerte de confirmation
+        alert('Formulaire soumis!');
+    });
+});
